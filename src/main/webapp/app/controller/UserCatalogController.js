@@ -69,8 +69,8 @@ Ext.define('UserCatalog.controller.UserCatalogController', {
         userModel.save({
             success: function (operation, response) {
                 var objAjax = operation.data;
-                //Ext.getStore('UserCatalogStore').add(objAjax);
-                //me.getAddUserFormView().close();
+                Ext.getStore('UserCatalogStore').add(objAjax);
+                me.getAddUserFormView().close();
                 
             },
             failure: function (dummy, result) {

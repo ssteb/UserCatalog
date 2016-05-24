@@ -17,7 +17,7 @@ Ext.define('UserCatalog.view.UserGridView',{
             flex: 1,
             text: 'Користувач',
             sortable: true,
-            dataindex: 'username',
+            dataIndex: 'username',
             editor: {
                 xtype: 'textfield',
                 regex: /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/,
@@ -68,4 +68,4 @@ Ext.define('UserCatalog.view.UserGridView',{
             ]
         }
     ]
-})
+});
